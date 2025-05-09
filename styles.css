@@ -1,0 +1,59 @@
+::before,
+::after,
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+#navbar{
+    border: 1px solid black;
+    position: fixed;
+    height: 7vh;
+    width: 100vw;
+}
+
+#navbar a{
+    text-decoration: none;
+}
+
+#navbar, #nav, #tab{
+    display: flex;
+    align-items: center;
+}
+
+#nav, #tab{
+    list-style-type: none;
+    width: 50%;
+    height: 100%;
+}
+
+#tab{
+    justify-content: flex-start;
+}
+
+#tab li{
+    margin-left: 10px;
+}
+
+#nav{
+    justify-content: flex-end;
+}
+
+#nav li{
+    margin-right: 10px;
+}
+
+#landing{
+    border: 1px solid green;
+    padding-top: 7vh;
+    height: 200vh;
+    width: 100vw;
+}
+
+#main{
+    border: 1px solid pink;
+    padding-top: 7vh;
+    height: 100vh;
+    width: 100vw;
+}
