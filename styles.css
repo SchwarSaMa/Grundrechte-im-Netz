@@ -17,18 +17,16 @@
     text-decoration: none;
 }
 
-#navbar, #nav, #tab{
+#navbar, #tab{
     display: flex;
     align-items: center;
 }
 
-#nav, #tab{
-    width: 50%;
-    height: 100%;
-}
-
 #tab{
+    display: none;
     justify-content: flex-start;
+    width: 100%;
+    height: 100%;
 }
 
 .tablink{
@@ -40,25 +38,30 @@
     height: 100%;
 }
 
-#nav{
-    list-style-type: none;
-    justify-content: flex-end;
-}
-
-#nav li{
-    margin-right: 10px;
-}
-
-#landing{
-    border: 1px solid green;
-    padding-top: 7vh;
-    height: 200vh;
-    width: 100vw;
-}
-
 #main{
     border: 1px solid pink;
     padding-top: 7vh;
     height: 100vh;
     width: 100vw;
+}
+
+#landing{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.tab-content{
+    display: none;
+    border: 1px solid cyan;
+    height: calc(100vh - 7vh);
+    width: inherit;
+}
+
+.active{
+    display: block !important;
 }

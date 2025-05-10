@@ -1,9 +1,17 @@
-function openTab(event, tabName){
-    const tabs = document.querySelectorAll('.tab-content');
-    tabs.forEach(tab => {
-        tab.style.display = 'none';
-    })
+const tabs = document.querySelectorAll('.tab-content');
 
-    document.getElementById(tabName).style.display = 'block';
-    console.log(tabs, tabName);
+function openTab(event, tabName){
+    tabs.forEach(tab => {
+        tab.classList.remove('active');
+    })
+    document.getElementById(tabName).classList.add('active');
+}
+
+function showTabs(){
+    const tabNavigation = document.querySelector('#tab');
+    const landingPage = document.querySelector('#landing');
+
+    tabNavigation.style.display = 'block';
+    landingPage.style.display = 'none';
+    tabs[0].classList.add('active');
 }

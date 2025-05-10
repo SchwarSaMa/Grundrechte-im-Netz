@@ -12,16 +12,15 @@
             <button class="tablink" onclick="openTab(event, 'privacy')">Privatsphäre</button>
             <button class="tablink" onclick="openTab(event, 'civil-rights')">Überwachung & Grundrechte</button>
         </div>
-        <ul id="nav">
-            <li><a href="#main">Jetzt endecken</a></li>
-        </ul>
     </nav>
-    <section id="landing">
-        <h1>Deine Rechte im Netz – Weißt du, was dir zusteht?</h1>
-        <h3>Warum digitale Grundrechte wichtig sind:</h3>
-        <p>Test Test</p>
-    </section>
     <main id="main">
+        <section id="landing">
+            <h1>Deine Rechte im Netz – Weißt du, was dir zusteht?</h1>
+            <h3>Warum digitale Grundrechte wichtig sind:</h3>
+            <p>Test Test</p>
+            <button onclick="showTabs()">Jetzt entdecken!</button>
+        </section>
+
         <div id="privacy" class="tab-content">
             <div class="info-card">
                 <h3>Definition im digitalen Raum</h3>
@@ -33,7 +32,7 @@
                 <button type="submit">Check</button>
             </form>
         </div>
-        
+            
         <div id="civil-rights" class="tab-content">
             <div class="info-card">
                 <h3>Was passiert, wenn Staaten ohne Anlass mitlesen?</h3>
