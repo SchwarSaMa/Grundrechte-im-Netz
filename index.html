@@ -4,13 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <title>Grundrechte im Netz</title>
 </head>
 <body>
+    <nav id="backdrop-blurr"></nav>
     <nav id="navbar">
+        <div id="nav-logo">
+            <svg width="400" height="400" viewBox="0 0 1024 1024">
+                <!-- Hintergrundkreis -->
+                <circle class="background-circle" cx="512" cy="512" r="350" />
+              
+                <!-- Ladebalken -->
+                <circle class="progress-circle" id="progressCircle" cx="512" cy="512" r="350"
+                  stroke-dasharray="2827" stroke-dashoffset="2827" />
+              
+                <!-- Deine bestehende Grafik -->
+                <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
+                  fill="#000000" stroke="none">
+                  <path d="M5085 7532 c-11 -2 -95 -45 -187 -94 -560 -301 -1023 -436 -1600
+                  -467 -146 -7 -160 -10 -197 -34 -23 -15 -50 -45 -61 -67 -20 -39 -20 -55 -20
+                  -1052 0 -1111 0 -1111 61 -1338 109 -410 313 -755 633 -1075 295 -294 533
+                  -459 1131 -781 291 -157 259 -156 540 -5 257 139 462 256 575 329 288 185 574
+                  437 759 667 202 251 371 591 447 900 54 222 54 216 54 1299 0 686 -3 1014 -11
+                  1033 -29 77 -109 122 -215 123 -100 0 -359 26 -497 50 -384 65 -777 207 -1187
+                  429 -142 77 -184 93 -225 83z m230 -863 c199 -61 372 -202 454 -371 61 -125
+                  71 -195 71 -485 l0 -248 74 3 c40 2 92 -2 115 -8 48 -13 104 -58 120 -98 8
+                  -20 11 -222 9 -747 -3 -699 -4 -721 -23 -754 -11 -19 -37 -48 -58 -65 l-39
+                  -31 -901 -3 -902 -2 -45 22 c-26 14 -57 41 -75 66 l-30 44 -3 732 -2 732 22
+                  34 c41 60 79 75 194 75 l102 0 5 275 c5 301 11 338 68 453 97 192 292 338 524
+                  393 82 19 230 11 320 -17z"/>
+                  <path d="M5056 6409 c-178 -26 -333 -173 -366 -348 -5 -29 -10 -152 -10 -272
+                  l0 -219 441 0 440 0 -3 258 c-3 238 -5 261 -26 312 -73 181 -278 297 -476 269z"/>
+                  <path d="M5005 5156 c-177 -82 -214 -337 -67 -466 25 -22 49 -40 53 -40 5 0 9
+                  -83 9 -185 0 -251 11 -275 124 -275 44 0 61 5 83 24 l28 24 3 206 c3 189 5
+                  205 22 211 10 3 38 27 63 54 100 106 102 266 5 376 -82 93 -214 122 -323 71z"/>
+                  </g>
+              </svg>
+        </div>
         <div id="tab">
-            <button class="tablink" onclick="openTab(event, 'privacy')">Privatsphäre</button>
-            <button class="tablink" onclick="openTab(event, 'civil-rights')">Überwachung & Grundrechte</button>
+            <button class="tablink" onclick="openTab(event, 'privacy')"><i class="fa-solid fa-shield-halved"></i>Privatsphäre</button>
+            <button class="tablink" onclick="openTab(event, 'civil-rights')"><i class="fa-solid fa-eye"></i>Überwachung & Grundrechte</button>
         </div>
     </nav>
     <main id="main">
@@ -203,7 +237,7 @@
             </form>-->
             
         <section id="civil-rights" class="tab-content">
-            <div class="info-card">
+            <div class="info-card scroll-snap">
                 <h3>Was passiert, wenn Staaten ohne Anlass mitlesen?</h3>
                 <p></p>
                 <ol>
