@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root{
+    --privacy-grid-rows: 3;
+    --civil-rights-grid-rows: 1;
+}
+
 #navbar{
     border: 1px solid black;
     position: fixed;
@@ -46,7 +51,6 @@
 }
 
 #landing{
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,6 +66,28 @@
     width: inherit;
 }
 
+#privacy, #civil-rights{
+    grid-auto-flow: row;
+    grid-template-columns: 100vw;
+}
+
+#privacy {
+    grid-template-rows: repeat(var(--privacy-grid-rows), 93vh);
+}
+
+#civil-rights{
+    grid-template-rows: repeat(var(--civil-rights-grid-rows), 93vh);
+}
+
+.info-card{
+    border: 2px solid pink;
+    
+}
+
+form{
+    border: 1px solid brown;
+}
+
 .active{
-    display: block !important;
+    display: grid !important;
 }
