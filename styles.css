@@ -18,10 +18,6 @@
     width: 100vw;
 }
 
-#navbar a{
-    text-decoration: none;
-}
-
 #navbar, #tab{
     display: flex;
     align-items: center;
@@ -82,6 +78,10 @@
 .info-card{
     border: 2px solid pink;
     
+}
+
+ol, ul{
+   all: revert;
 }
 
 form{
