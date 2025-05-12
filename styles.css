@@ -11,6 +11,11 @@
     --civil-rights-grid-rows: 1;
 }
 
+html{
+    scroll-snap-type: y proximity;
+    scroll-padding-top: 7vh;
+}
+
 #navbar{
     border: 1px solid black;
     position: fixed;
@@ -40,8 +45,7 @@
 }
 
 #main{
-    border: 1px solid pink;
-    padding-top: 7vh;
+    border: 1px solid lime;
     height: 100vh;
     width: 100vw;
 }
@@ -57,6 +61,7 @@
 
 .tab-content{
     display: none;
+    margin-top: 7vh;
     border: 1px solid cyan;
     height: calc(100vh - 7vh);
     width: inherit;
@@ -86,6 +91,10 @@ ol, ul{
 
 form{
     border: 1px solid brown;
+}
+
+.scroll-snap{
+    scroll-snap-align: start;
 }
 
 .active{
