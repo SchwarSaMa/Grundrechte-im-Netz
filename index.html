@@ -241,7 +241,7 @@
             </div>
             </div>
             <div class="mini-quizz info-card scroll-snap">
-                <form>
+                <form id="privacy-mini-quizz">
                     <h2 id="heading-mini-quizz">Mini-Quiz: Wie gut schützt du deine digitale Privatsphäre?</h2>
                     <fieldset>
                         <legend>1. Was bedeutet Privatsphäre im digitalen Raum?</legend>
@@ -299,7 +299,7 @@
                         <label><input type="radio" name="q8" value="c"> Man kann keine Gruppen erstellen</label>
                     </fieldset>
                     <div id="btn-mini-quizz">
-                        <button type="submit">Quiz auswerten</button>
+                        <button onclick="printQuizzResults(event)" type="submit">Quiz auswerten</button>
                     </div>
                     <p id="quiz-result">Test Output</p>
                 </form>
