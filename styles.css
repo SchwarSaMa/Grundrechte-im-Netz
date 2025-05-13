@@ -74,7 +74,6 @@ html{
 .tab-content{
     display: none;
     padding-top: 10vh;
-    height: calc(100vh - 10vh);
     width: inherit;
 }
 
@@ -84,11 +83,11 @@ html{
 }
 
 #privacy {
-    grid-template-rows: repeat(var(--privacy-grid-rows), 90vh);
+    grid-template-rows: repeat(var(--privacy-grid-rows), minmax(90vh, auto));
 }
 
 #civil-rights{
-    grid-template-rows: repeat(var(--civil-rights-grid-rows), 90vh);
+    grid-template-rows: repeat(var(--civil-rights-grid-rows), minmax(90vh, auto));
 }
 
 .scroll-snap{
