@@ -20,7 +20,7 @@
                   stroke-dasharray="2198" stroke-dashoffset="2198" />
               
                 <!-- lock -->
-                <g transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
+                <g id="lock" transform="translate(0.000000,1024.000000) scale(0.100000,-0.100000)"
                   fill="#000000" stroke="none">
                   <path d="M5085 7532 c-11 -2 -95 -45 -187 -94 -560 -301 -1023 -436 -1600
                   -467 -146 -7 -160 -10 -197 -34 -23 -15 -50 -45 -61 -67 -20 -39 -20 -55 -20
@@ -43,15 +43,13 @@
               </svg>
         </div>
         <div id="tab">
-            <button class="tablink" onclick="openTab(event, 'privacy')"><i class="fa-solid fa-shield-halved"></i>Privatsphäre</button>
-            <button class="tablink" onclick="openTab(event, 'civil-rights')"><i class="fa-solid fa-eye"></i>Überwachung & Grundrechte</button>
+            <button class="tablink" onclick="openTab('privacy')"><i class="fa-solid fa-shield-halved"></i>Privatsphäre</button>
+            <button class="tablink" onclick="openTab('civil-rights')"><i class="fa-solid fa-eye"></i>Überwachung & Grundrechte</button>
         </div>
     </nav>
     <main id="main">
         <section id="landing">
             <h1>Deine Rechte im Netz – Weißt du, was dir zusteht?</h1>
-            <h3>Warum digitale Grundrechte wichtig sind:</h3>
-            <p>Test Test</p>
             <button onclick="showTabs()">Jetzt entdecken!</button>
         </section>
 
@@ -188,7 +186,6 @@
                         </tbody>
                     </table>
                 </details>
-                  
                 <blockquote class="vpn-fact">
                     <i class="fa-solid fa-quote-left"></i>
                     <em>Ein VPN macht dich nicht unsichtbar im Netz – aber es ist ein wichtiger Baustein für deine digitale Privatsphäre.</em>
@@ -236,7 +233,7 @@
                     </details>
 
                 <h3>Was sollte ich vermeiden?</h3>
-                    <p> WhatsApp verwendet zwar E2EE, sammelt aber Metadaten.
+                <p> WhatsApp verwendet zwar E2EE, sammelt aber Metadaten.
                     Telegram speichert viele Chats unverschlüsselt auf Servern.</p>
             </div>
             </div>
@@ -301,7 +298,7 @@
                     <div id="btn-mini-quizz">
                         <button onclick="updateProgressBar(event)" type="submit">Quiz auswerten</button>
                     </div>
-                    <p id="quiz-result">Test Output</p>
+                    <p id="quiz-result"></p>
                 </form>
             </div>   
         </section>
@@ -317,11 +314,6 @@
                 </ol>
             </div>
         </div>
-            <!--<form>
-                <label for="question">Second Question</label>
-                <input type="checkbox" id="question"/>
-                <button type="submit">Check</button>
-            </form>-->
         </section>
     </main>
     <script src="script.js"></script>

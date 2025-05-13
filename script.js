@@ -1,6 +1,6 @@
 const tabs = document.querySelectorAll('.tab-content');
 
-function openTab(event, tabName){
+function openTab(tabName){
     tabs.forEach(tab => {
         tab.classList.remove('active');
     })
