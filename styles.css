@@ -7,7 +7,7 @@
 }
 
 :root{
-    --privacy-grid-rows: 3;
+    --privacy-grid-rows: 4;
     --civil-rights-grid-rows: 1;
 }
 
@@ -117,14 +117,6 @@ img{
     object-fit: cover;
 }
 
-.text-container{
-    width: 70%;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding: 1rem 2rem 1rem 2rem;
-    
-}
-
 /* Icons Font Awesome*/
 .fa-solid{
     margin-right: 0.3rem;
@@ -136,6 +128,11 @@ img{
 }
 
 /* Text styling*/
+.text-container{
+    width: 70%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
 ol, ul{
     padding: 0 0 0 3rem;
 }
@@ -178,6 +175,25 @@ tr{
     height: 30px;
 }
 
+fieldset{
+    margin: 0.7rem 0 0 0;
+    border: none;
+    border-left: 5px solid #182d37;
+    padding-left: 1rem;
+}
+
+legend{
+    font-size: 1.3rem;
+}
+
+input{
+    margin: 0.7rem 0 0 0;
+}
+
+label{
+    font-size: 1.1rem;
+}
+
 tbody tr:nth-child(odd){
     background-color: lightgrey;
 }
@@ -186,7 +202,6 @@ blockquote{
     background-color: lightgrey;
     padding: 1rem;
 }
-
 
 /*Progress bar logo*/
 svg {
@@ -208,3 +223,42 @@ svg {
     stroke: #ddd;
     stroke-width: 100;
   }
+
+
+form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(7, auto);
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+#heading-mini-quizz{
+    text-align: center;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+}
+
+#btn-mini-quizz{
+    text-align: center;
+    margin-top: 0.7rem;
+    grid-column: 1 / span 2;
+    grid-row: 6;
+}
+
+#btn-mini-quizz button {
+    font-size: 1.1rem;
+    height: 100%;
+    width: 100%;
+}
+
+#quiz-result{
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 0.7rem;
+    grid-column: 1 / span 2;
+    grid-row: 7;
+}
