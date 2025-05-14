@@ -27,6 +27,7 @@ function retrieveFormData(){
     
         if(formInput.length < 8){
             alert('Please answer all questions');
+            return;
         } else{
             return formInput;
         }

@@ -8,10 +8,10 @@
     <title>Grundrechte im Netz</title>
 </head>
 <body>
-    <nav id="backdrop-blurr"></nav>
+    <div aria-hidden="true" id="backdrop-blurr"></div>
     <nav id="navbar">
         <div id="nav-logo">
-            <svg width="400" height="400" viewBox="0 0 1024 1024">
+            <svg aria-hidden="true" width="400" height="400" viewBox="0 0 1024 1024">
                 <!-- background circle -->
                 <circle class="background-circle" cx="512" cy="512" r="350" />
               
@@ -43,8 +43,8 @@
               </svg>
         </div>
         <div id="tab">
-            <button class="tablink" onclick="openTab('privacy')"><i class="fa-solid fa-shield-halved"></i>Privatsphäre</button>
-            <button class="tablink" onclick="openTab('civil-rights')"><i class="fa-solid fa-eye"></i>Überwachung & Grundrechte</button>
+            <button id="privacy-btn" class="tablink" onclick="openTab('privacy')"><i class="fa-solid fa-shield-halved"></i>Privatsphäre</button>
+            <button id="civil-rights-btn" class="tablink" onclick="openTab('civil-rights')"><i class="fa-solid fa-eye"></i>Überwachung & Grundrechte</button>
         </div>
     </nav>
     <main id="main">
@@ -99,7 +99,7 @@
                         <li> Neue Technologien wie Gesichtserkennung oder Verhaltensanalyse 
                             stellen zusätzliche Risiken für die Privatsphäre dar.</li>
                     </ul>
-                    <h3>Was bedeutet digitale Privatsphäre konkret?</h3>
+                    <h3>Maßnahmen zum Schutz der digitalen Privatsphäre</h3>
                     <ol>
                         <li>
                             <strong>Bewusste Datenfreigabe</strong>
@@ -129,7 +129,7 @@
             </div>
             <div class="vpn-section info-card scroll-snap">
                 <div class="image-container">
-                    <img src="/Grundrechte-im-Netz/images/petter-lagson-VmMimaq445E-unsplash.jpg" alt=""/>
+                    <img src="/Grundrechte-im-Netz/images/petter-lagson-VmMimaq445E-unsplash.jpg" alt="Ein Tablet zeigt eine VPN Anwendung mit aktivierter Verbindung" loading="lazy"/>
                 </div>
                 <div class="text-container">
                 <h2>Was ist ein VPN?</h2>
@@ -196,7 +196,7 @@
 
             <div class="messenger-section info-card scroll-snap">
                 <div class="image-container">
-                    <img src="/Grundrechte-im-Netz/images/nathan-dumlao-kLmt1mpGJVg-unsplash.jpg" alt=""/>
+                    <img src="/Grundrechte-im-Netz/images/nathan-dumlao-kLmt1mpGJVg-unsplash.jpg" alt="Ein Smartphone auf dessen Bildschirm verschiedene Messenger Dienste angezeigt werden." loading="lazy"/>
                 </div>
                 <div class="text-container">
                 <h2>Sichere Messenger – worauf kommt es an?</h2>
@@ -307,11 +307,8 @@
             <div class="info-card scroll-snap">
                 <div class="text-container">
                 <h3>Was passiert, wenn Staaten ohne Anlass mitlesen?</h3>
-                <p></p>
-                <ol>
-                    <li>Kontrolle über persönliche Daten</li>
-                    <li>Test</li>
-                </ol>
+                <p>Inhalt demnächst verfügbar ...</p>
+                <p>Bis dahin schaut doch bei Epicenter.Works vorbei und informiert euch über den <a href="https://epicenter.works/content/bundestrojaner-fuehrt-zur-massengefaehrdung-der-bevoelkerung"><i class="fa-solid fa-link"></i>Bundestrojaner</a>.</p>
             </div>
         </div>
         </section>
